@@ -45,8 +45,8 @@ func (u *UI) Start(eventHandler EventHandler) {
 	systray.Run(func() {
 		systray.SetIcon(icon)
 		systray.SetTooltip("UriGallery Desktop")
-		otp := systray.AddMenuItem("OTP", "OTP")
-		quit := systray.AddMenuItem("Quit", "Quit")
+		otp := systray.AddMenuItem("OTP 복사", "OTP 복사")
+		quit := systray.AddMenuItem("종료", "종료")
 		for {
 			select {
 			case <-otp.ClickedCh:

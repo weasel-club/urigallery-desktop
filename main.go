@@ -75,7 +75,7 @@ func main() {
 				log.Fatal(err)
 			}
 			u.WriteClipboard(otp)
-			u.ShowMessage("OTP", "OTP copied to clipboard")
+			u.ShowMessage("OTP", "OTP가 클립보드에 복사되었습니다.")
 		case *ui.EventQuit:
 			signalClient.CloseSession()
 			os.Exit(0)
