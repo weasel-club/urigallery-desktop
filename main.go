@@ -89,6 +89,7 @@ func main() {
 	a.AddHandler("downloadImage", func(r *app.Request) (*app.Response, error) {
 		return app.DownloadImage(r, picturesDir)
 	})
+	a.AddHandler("getVersion", app.GetVersion)
 
 	channelCount := 0
 	sleepTime := 1 * time.Second
